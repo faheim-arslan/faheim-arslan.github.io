@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: montserrat;
-    src: url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: satoshi;
-    src: url("../fonts/satoshi/Satoshi-Medium.ttf") format("truetype");
+    font-family: roboto;
+    src: url("../fonts/roboto/Roboto-light.ttf") format("truetype");
 }

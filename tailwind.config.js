@@ -9,8 +9,13 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["montserrat, sans"],
-        satoshi: ["satoshi, sans"]
+        roboto: ["roboto, sans"]
       },
+    },
+    // custom spacing
+    spacing: {
+      '1/5': '20%',
+      '1/2': '50%',
     },
   },
   plugins: [],

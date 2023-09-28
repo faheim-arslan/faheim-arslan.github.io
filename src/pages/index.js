@@ -1,11 +1,11 @@
 import * as React from "react";
-import NavigationBar from "../components/navigationBar";
+// import NavigationBar from "../components/navigationBar";
 import About from "../components/about";
 
 const IndexPage = () => {
   return (
     <div>
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <main>
         <About />
       </main>
