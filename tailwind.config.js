@@ -11,6 +11,9 @@ module.exports = {
         montserrat: ["montserrat, sans"],
         roboto: ["roboto, sans"]
       },
+      textUnderlineOffset: {
+        '3': '3px',
+      },
     },
     // custom spacing
     spacing: {
@@ -19,6 +22,7 @@ module.exports = {
       '1/4': '25%',
       '1/8': '12.5%',
       '1/25': '4%',
+      '1/50': '2%',
     },
   },
   plugins: [],
