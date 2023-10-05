@@ -21,11 +21,11 @@ const Experience = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center px-1/25 py-1/5">
-      <div className="companies-header font-montserrat-regular text-xl sm:text-3xl md:text-4xl lg:text-4xl mb-1/4 sm:mb-1/25 md:mb-1/25 lg:mb-1/25">
+      <div className="companies-header font-montserrat-regular text-xl sm:text-3xl md:text-4xl lg:text-4xl mb-1/25 sm:mb-1/50 md:mb-1/50 lg:mb-1/50">
         I'm proud to have worked with some remarkable companies
       </div>
 
-      <div className="companies flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-4">
+      <div className="companies flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-4 px-1/8 lg:px-1/4">
         <CompanyCard
           companyName={"Mastercard"}
           companyWebsite={"https://www.mastercard.ie/en-ie.html"}
