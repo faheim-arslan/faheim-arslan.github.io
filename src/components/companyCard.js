@@ -18,7 +18,7 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
       <p className="text-md">{duration}</p>
       <ul className="mt-2 flex flex-wrap mx-1/50 sm:mx-1/25 md:mx-1/25 lg:mx-1/8">
         {techstack.map((child, index) => (
-          <li className="mr-1.5 mt-2">
+          <li className="mr-1.5 mt-2" key={index}>
             <div className="flex items-center rounded-full bg-slate-200 px-3 py-1 text-md font-roboto-light leading-5">
               {child}
             </div>
