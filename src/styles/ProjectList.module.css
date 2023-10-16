@@ -1,0 +1,9 @@
+:root {
+  --saturated-yellow: hsl(50, 100%, 75%);
+  --saturated-blue: hsl(200, 100%, 75%);
+  --saturated-red: hsl(0, 100%, 75%);
+  --saturated-green: hsl(120, 100%, 75%);
+  --saturated-teal: hsl(180, 100%, 75%);
+  --saturated-cyan: hsl(210, 100%, 75%);
+  --saturated-fuchsia: hsl(300, 100%, 75%);
+}
