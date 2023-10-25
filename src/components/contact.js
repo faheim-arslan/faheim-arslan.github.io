@@ -21,7 +21,7 @@ const Contact = () => {
       <br />
 
       <p
-        className="font-roboto-light text-xl sm:text-4xl md:text-4xl lg:text-5xl hover:underline underline-offset-3 ml-auto cursor-pointer hover:pointer"
+        className="email-address font-roboto-light text-xl sm:text-4xl md:text-4xl lg:text-5xl hover:underline underline-offset-3 ml-auto cursor-pointer hover:pointer"
         onClick={handleEmailClick}
       >
         faheimarslan@gmail.com &#8599;

@@ -7,7 +7,7 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
   };
 
   return (
-    <div className={`${companyName} flex flex-1 flex-col items-center mt-3`}>
+    <div className={`${companyName} flex flex-1 flex-col items-center mt-12`}>
       <img src={logo} alt={companyName} />
       <p
         className="designation_company_name font-roboto-light text-md cursor-pointer hover:pointer"

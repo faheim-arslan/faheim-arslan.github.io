@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["montserrat, sans"],
-        roboto: ["roboto, sans"]
+        roboto: ["roboto, sans"],
+        sourcecodepro: ["sourcecodepro, sans"]
       },
       textUnderlineOffset: {
         '3': '3px',
@@ -28,10 +29,15 @@ module.exports = {
       '1.5': '0.375rem',
       '2': '0.5rem',
       '3':	'0.75rem',
-      '24': '1.5rem',
-      '48': '3rem',
+      '4': '1rem',
+      '6': '1.5rem',
+      '12': '3rem',
+      '36': '9rem',
+      '48': '12rem',
+      '72': '18rem',
       '96': '24rem',
       '112': '28rem',
+      '116': '29rem',
       '128': '32rem',
       '168': '42rem',
     },

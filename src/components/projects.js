@@ -1,19 +1,15 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
 
 import styles from "../styles/ProjectList.module.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const projectList = [
     "Spring Source Code Generator",
     "NuhArc",
     "Dublin bikes time series analysis",
-    "portfolio",
-    "github issue finder",
-    "airbnb price estimator",
+    "Portfolio",
+    "Github issue finder",
+    "Airbnb price estimator",
     "Fashion Generator using GANs",
   ];
 
@@ -27,52 +23,34 @@ const Projects = () => {
     "fuchsia",
   ];
 
-  useEffect(() => {
-    // Calculate the total width of the project items
-    const projectListContainer = document.querySelector(".main-project-panel");
-    const projectItems = document.querySelectorAll(".project-panel");
-    const totalWidth = Array.from(projectItems).reduce(
-      (acc, item) => acc + item.clientWidth,
-      0
-    );
-
-    // Create a GSAP timeline for the scrolling animation
-    gsap.to(projectItems, {
-      ease: "none", // Adjust easing as needed
-      scrollTrigger: {
-        trigger: ".projects",
-        pin: "true",
-        start: "50% bottom",
-        scrub: 1,
-        markers: "true",
-        anticipatePin: 1,
-      },
-    });
-
-    return () => {
-      window.removeEventListener("scroll");
-    };
-  }, []);
-
   return (
     <section className="projects min-h-screen">
-      <div className="font-roboto-medium text-3xl sm:text-5xl md:text-5xl lg:text-5xl flex justify-center items-center mb-1/25 sm:mb-1/50 md:mb-1/50 lg:mb-1/50">
+      <div
+        className="font-roboto-medium text-3xl sm:text-5xl md:text-5xl lg:text-5xl flex justify-center items-center
+       mb-1/25 sm:mb-1/50 md:mb-1/50 lg:mb-1/50"
+      >
         My Work
       </div>
       <br />
 
       <div
-        className="main-project-panel p-48 flex"
-        style={{ width: "100%", overflowX: "auto" }}
+        className="main-project-panel 
+          md:px-48 md:py-24 
+          lg:px-48 lg:py-24 
+          flex"
       >
-        <div></div>
-        <div className="projects-container flex">
+        <div className="projects-container flex flex-wrap justify-center">
           {projectList.map((child, index) => (
-            <div className="project-panel mx-24 mt-2" key={index}>
+            <div className="project-panel mx-auto mt-4" key={index}>
               <div
-                className={`panel flex items-center rounded-[4rem] shadow-xl px-3 py-1 h-128 w-168 text-md font-roboto-light leading-5`}
+                className={`panel items-center shadow-xl 
+                  px-3 py-3 h-36 w-48 text-xl 
+                  md:px-6 md:py-6 md:h-72 md:w-116 md:text-3xl 
+                  lg:px-6 lg:py-6 lg:h-72 lg:w-116 lg:text-3xl 
+                  font-montserrat-bold font-semibold rounded-2xl leading-normal`}
                 style={{
                   backgroundColor: `var(--saturated-${bgColors[index]})`,
+                  color: `var(--darker-${bgColors[index]})`,
                 }}
               >
                 {child}

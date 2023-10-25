@@ -20,7 +20,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-1/25 py-1/5">
+    <div className="mx-auto min-h-screen max-w-screen-xl flex flex-col justify-center items-center px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div className="companies-header font-montserrat-regular text-xl sm:text-3xl md:text-4xl lg:text-4xl mb-1/25 sm:mb-1/50 md:mb-1/50 lg:mb-1/50">
         I'm proud to have worked with some remarkable companies
       </div>

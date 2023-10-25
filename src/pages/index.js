@@ -9,7 +9,7 @@ import Projects from "../components/projects";
 const IndexPage = () => {
   return (
     <div>
-      <main>
+      <main className="portfolio">
         <About />
         <Experience />
         <Projects />
