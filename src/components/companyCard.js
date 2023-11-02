@@ -1,5 +1,8 @@
 import * as React from "react";
 
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 const CompanyCard = ({companyName, companyWebsite, designation, duration, techstack, logo}) => {
     
   const openWebsite = (url) => {
@@ -8,7 +11,7 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
 
   return (
     <div className={`${companyName} flex flex-1 flex-col items-center mt-12`}>
-      <img src={logo} alt={companyName} />
+      <GatsbyImage image={getImage()} alt={companyName} />
       <p
         className="designation_company_name font-roboto-light text-md cursor-pointer hover:pointer"
         onClick={() => openWebsite(`${companyWebsite}`)}
@@ -30,3 +33,32 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
 };
 
 export default CompanyCard;
+
+export const imageQuery = graphql`
+query MyQuery {
+  allMdx {
+    edges {
+      node {
+        id
+        frontmatter {
+          designation
+          duration
+          title
+          website
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 100
+                blurredOptions: {width: 10}
+                placeholder: BLURRED
+                transformOptions: {cropFocus: CENTER}
+                aspectRatio: 0.7
+              )
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`
