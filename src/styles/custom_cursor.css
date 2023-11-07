@@ -1,0 +1,12 @@
+.custom-cursor {
+  cursor: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}

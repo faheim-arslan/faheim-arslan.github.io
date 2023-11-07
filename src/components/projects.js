@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "../styles/ProjectList.module.css";
+import "../styles/custom_cursor.css";
 
 const Projects = () => {
   const projectList = [
@@ -44,13 +45,33 @@ const Projects = () => {
             <div className="project-panel mx-auto mt-4" key={index}>
               <div
                 className={`panel items-center shadow-xl 
-                  px-3 py-3 h-36 w-48 text-xl 
-                  md:px-6 md:py-6 md:h-72 md:w-116 md:text-3xl 
-                  lg:px-6 lg:py-6 lg:h-72 lg:w-116 lg:text-3xl 
-                  font-montserrat-bold font-semibold rounded-2xl leading-normal`}
+                  px-3 py-3 h-36 w-48 text-xl hover:text-2xl
+                  md:px-6 md:py-6 md:h-72 md:w-116 md:text-3xl md:hover:text-4xl
+                  lg:px-6 lg:py-6 lg:h-72 lg:w-116 lg:text-3xl lg:hover:text-4xl 
+                  font-montserrat-bold font-semibold rounded-2xl leading-normal
+                  transition-transform transform duration-400 ease-in-out hover:scale-105 
+                `}
                 style={{
                   backgroundColor: `var(--saturated-${bgColors[index]})`,
                   color: `var(--darker-${bgColors[index]})`,
+                  transition: "transform 0.3s", // Add a transition for smooth transform animation
+                  transform: "scale(1)", // Set the initial transform
+                }}
+                // Apply the brightness filter on hover
+                onMouseEnter={(e) => {
+                  if (window.innerWidth > 768) {
+                    e.currentTarget.style.filter = "saturate(200%)"; // Adjust the brightness value
+                    e.currentTarget.style.transform = "scale(1.1)";
+                    e.currentTarget.style.cursor = "none";
+                  }
+                }}
+                // Reset the brightness on mouse leave for the current element
+                onMouseLeave={(e) => {
+                  if (window.innerWidth > 768) {
+                    e.currentTarget.style.filter = "saturate(100%)"; // Reset to the initial brightness
+                    e.currentTarget.style.transform = "scale(1)";
+                    e.currentTarget.style.cursor = "auto";
+                  }
                 }}
               >
                 {child}
