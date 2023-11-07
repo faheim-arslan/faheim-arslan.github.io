@@ -13,7 +13,7 @@ const Experience = ({ data }) => {
         I'm proud to have worked with some remarkable companies
       </div>
 
-      <div className="companies flex flex-col sm:flex-row md:flex-row lg:flex-row items-center space-x-4 px-1/8 lg:px-1/4">
+      <div className="companies flex flex-col sm:flex-row md:flex-row lg:flex-row items-start justify-center space-x-4 px-1/8 lg:px-1/4">
 
         {data.allMdx.edges.map(({ node }) => (
           <div

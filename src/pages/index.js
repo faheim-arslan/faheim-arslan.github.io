@@ -42,7 +42,6 @@ export const query = graphql`
                 blurredOptions: {width: 10}
                 placeholder: BLURRED
                 transformOptions: {cropFocus: CENTER}
-                aspectRatio: 0.7
               )
             }
           }
