@@ -13,7 +13,6 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build:tailwind": "tailwind build static/styles/index.css -o    static/styles/tailwind.css",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "deploy:ci": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/faheim-arslan/faheim-arslan.github.io.git"
   },
