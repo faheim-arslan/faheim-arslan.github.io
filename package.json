@@ -13,7 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build:tailwind": "tailwind build static/styles/index.css -o    static/styles/tailwind.css"
+    "build:tailwind": "tailwind build static/styles/index.css -o    static/styles/tailwind.css",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/faheim-arslan/faheim-arslan.github.io.git"
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
@@ -24,6 +26,7 @@
     "gatsby-plugin-sharp": "^5.6.0",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-sharp": "^5.6.0",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typeit-react": "^2.6.4"
