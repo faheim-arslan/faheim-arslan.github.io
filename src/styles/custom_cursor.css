@@ -1,5 +1,6 @@
 .custom-cursor {
   cursor: none;
+  content: "\8599";
   position: absolute;
   width: 24px;
   height: 24px;

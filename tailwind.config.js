@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
     "/src/fonts/**/*.ttf",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {

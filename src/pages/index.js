@@ -5,14 +5,17 @@ import About from "../components/about";
 import Contact from "../components/contact";
 import Experience from "../components/experience";
 import Projects from "../components/projects";
+import NavigationBar from "../components/navigationBar";
 
-
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
   return (
-    <div>
+    <div className="dark:bg-gray-800">
+      <div>
+        <NavigationBar />
+      </div>
       <main className="portfolio">
         <About />
-        <Experience data={data}/>
+        <Experience data={data} />
         <Projects />
         <Contact />
       </main>
@@ -25,29 +28,29 @@ export default IndexPage;
 export const Head = () => <title>Home Page</title>;
 
 export const query = graphql`
-{
-  allMdx {
-    edges {
-      node {
-        id
-        frontmatter {
-          designation
-          duration
-          title
-          website
-          stack
-          image {
-            childImageSharp {
-              gatsbyImageData(
-                blurredOptions: {width: 10}
-                placeholder: BLURRED
-                transformOptions: {cropFocus: CENTER}
-              )
+  {
+    allMdx {
+      edges {
+        node {
+          id
+          frontmatter {
+            designation
+            duration
+            title
+            website
+            stack
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  blurredOptions: { width: 10 }
+                  placeholder: BLURRED
+                  transformOptions: { cropFocus: CENTER }
+                )
+              }
             }
           }
         }
       }
     }
   }
-}
 `;
