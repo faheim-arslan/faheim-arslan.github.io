@@ -1,11 +1,11 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import About from "./src/components/about";
-import Contact from "./src/components/contact";
-import Experience from "./src/components/experience";
-import Projects from "./src/components/projects";
-import NavigationBar from "./src/components/navigationBar";
+import About from "../components/about";
+import Contact from "../components/contact";
+import Experience from "../components/experience";
+import Projects from "../components/projects";
+import NavigationBar from "../components/navigationBar";
 
 const IndexPage = ({ data }) => {
   return (
