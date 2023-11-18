@@ -9,9 +9,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["montserrat, sans"],
-        roboto: ["roboto, sans"],
-        sourcecodepro: ["sourcecodepro, sans"]
+        montserrat_regular: ["montserrat-regular"],
+        montserrat_bold: ["montserrat-bold"],
+        roboto_light: ["roboto-light"],
+        roboto_medium: ["roboto-medium"],
+        roboto_bold: ["roboto-bold"],
+        vinasans_regular: ["vinasans-regular"]
       },
       textUnderlineOffset: {
         '3': '3px',

@@ -15,7 +15,7 @@ const TypingHeader = () => {
     }).go();
   }, []);
 
-  return <div className="font-montserrat-regular dark:text-slate-200 text-2xl sm:text-3xl md:text-4xl lg:text-4xl" id="aboutTags" />;
+  return <div className="font-montserrat_regular dark:text-slate-200 text-2xl sm:text-3xl md:text-4xl lg:text-4xl" id="aboutTags" />;
 };
 
 export default TypingHeader;

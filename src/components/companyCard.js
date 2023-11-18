@@ -13,7 +13,7 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
     <div className={`${companyName} flex flex-1 flex-col items-center mt-12`}>
       <GatsbyImage image={getImage()} alt={companyName} />
       <p
-        className="designation_company_name font-roboto-light text-md cursor-pointer hover:pointer"
+        className="designation_company_name font-roboto_light text-md cursor-pointer hover:pointer"
         onClick={() => openWebsite(`${companyWebsite}`)}
       >
         {designation} | {companyName} &#8599;
@@ -22,7 +22,7 @@ const CompanyCard = ({companyName, companyWebsite, designation, duration, techst
       <ul className="mt-2 flex flex-wrap mx-1/50 sm:mx-1/25 md:mx-1/25 lg:mx-1/8">
         {techstack.map((child, index) => (
           <li className="mr-1.5 mt-2" key={index}>
-            <div className="flex items-center rounded-full bg-slate-200 px-3 py-1 text-md font-roboto-light leading-5">
+            <div className="flex items-center rounded-full bg-slate-200 px-3 py-1 text-md font-roboto_light leading-5">
               {child}
             </div>
           </li>

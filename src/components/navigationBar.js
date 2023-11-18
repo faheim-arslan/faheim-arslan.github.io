@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../fonts/montserrat/Montserrat-Medium.ttf";
 
 const NavigationBar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,9 +20,11 @@ const NavigationBar = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="p-4 fixed w-full top-0 bg-white dark:bg-gray-800 shadow-lg z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold">Faheim</div>
+        <div className="font-vinasans_regular text-gray-700 dark:text-white text-3xl">
+          faheim.
+        </div>
         <div>
           <button
             onClick={toggleDarkMode}
@@ -31,25 +32,11 @@ const NavigationBar = () => {
           >
             Toggle Theme
           </button>
+          
         </div>
       </div>
     </nav>
   );
-  // return (
-  //   <nav className="bg-black text-white p-4">
-  //     <div className="container mx-auto">
-  //       <div className="flex items-center justify-between">
-  //         <div className="text-2xl font-montserrat">Your Logo</div>
-  //         <ul className="flex space-x-4">
-  //           <li className="hover:text-gray-300 font-montserrat">Home</li>
-  //           <li className="hover:text-gray-300 font-montserrat">Experience</li>
-  //           <li className="hover:text-gray-300 font-montserrat">Projects</li>
-  //           <li className="hover:text-gray-300 font-montserrat">Contact</li>
-  //         </ul>
-  //       </div>
-  //     </div>
-  //   </nav>
-  // );
 };
 
 export default NavigationBar;

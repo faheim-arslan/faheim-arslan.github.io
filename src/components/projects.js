@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <section className="projects min-h-screen">
       <div
-        className="font-roboto-medium dark:text-slate-200 text-3xl sm:text-5xl md:text-5xl lg:text-5xl flex justify-center items-center
+        className="font-roboto_medium dark:text-slate-200 text-3xl sm:text-5xl md:text-5xl lg:text-5xl flex justify-center items-center
        mb-1/25 sm:mb-1/50 md:mb-1/50 lg:mb-1/50"
       >
         My Work
@@ -48,7 +48,7 @@ const Projects = () => {
                   px-3 py-3 h-36 w-48 text-xl hover:text-2xl
                   md:px-6 md:py-6 md:h-72 md:w-116 md:text-3xl md:hover:text-4xl
                   lg:px-6 lg:py-6 lg:h-72 lg:w-116 lg:text-3xl lg:hover:text-4xl 
-                  font-montserrat-bold font-semibold rounded-2xl leading-normal
+                  font-montserrat_bold font-semibold rounded-2xl leading-normal
                   transition-transform transform duration-400 ease-in-out hover:scale-105
                 `}
                 style={{

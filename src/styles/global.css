@@ -26,3 +26,8 @@
     font-family: roboto-bold;
     src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: vinasans-regular;
+    src: url("../fonts/vinasans/VinaSans-Regular.ttf") format("truetype");
+}
