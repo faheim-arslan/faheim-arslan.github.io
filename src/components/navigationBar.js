@@ -32,7 +32,6 @@ const NavigationBar = () => {
           >
             Toggle Theme
           </button>
-          
         </div>
       </div>
     </nav>
